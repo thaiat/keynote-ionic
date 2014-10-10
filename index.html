@@ -1,0 +1,478 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>famo.us Framework</title>
+
+    <meta name="description" content="Famo.us is a free, open source JavaScript framework that helps you create smooth, complex UIs for any screen">
+    <meta name="author" content="Avi Haiat">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if(window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="footer-logos">
+            <a href="http://yoobic.com" style="position:relative; top:35px; left:28px">
+                <img class="ts no-border" src="img/yoobic.svg" /><small style="position:relative;top:-35px; left:-18px;color:white;letter-spacing:0.4em">YOOBIC</small><small style="font-size:0.3em;position:relative;top:-10px; left:-150px;color:white">Collective intelligence</small>
+            </a>
+            <a href="http://famo.us" style="position:relative; left:-100px">
+                <img class="famous no-border" src="img/famous-parchment.svg" />
+            </a>
+            <a href="http://angularjs.org" style="position:relative; left:-100px">
+                <img class="angularjs no-border" src="img/angularjs.svg" />
+            </a>
+        </div>
+
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h2>famo.us</h2>
+                <p>Famo.us is a free, open source JavaScript framework that helps you create smooth, complex UIs for any screen</p>
+                <a href="http://disrupt.famo.us/periodic402/">
+                    <img src="img/famous-parchment.svg" class="no-border" style="width: 250px; margin-top: 45px;" />
+                </a>
+                <p style="margin-top:100px">
+                    <small>Presented by <br><a href="http://thaiat.github.io">Avi&nbsp;&nbsp;Haiat</a> - <a href="mailto:thaiat@yoobic.com">thaiat@yoobic.com</a></small>
+                    <br>
+                    <small><a href="http://thaiat.github.io">Gilles&nbsp;&nbsp;Haiat</a> - <a href="mailto:ghaiat@yoobic.com">ghaiat@yoobic.com</a></small>
+                </p>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+            <section data-background-color="#000">
+                <h2>Russian Kombat</h2>
+                <iframe width="854" height="510" src="//www.youtube.com/embed/AxOUYJc8OZ8" class="stretch" frameborder="0" allowfullscreen></iframe>
+            </section>
+
+            <section>
+                <h2>Who are we ?</h2>
+                <ul>
+                    <li><strong>name : </strong>Avi Haiat, Gilles Haiat</li>
+                    <li><strong>mail : </strong><a href="mailto:thaiat@yoobic.com">thaiat@yoobic.com, ghaiat@yoobic.com</a>
+                    </li>
+                    <li><strong>blog : </strong><a href="https://thaiat.github.io">http://thaiat.github.io</a>
+                    </li>
+                    <li><strong>github : </strong><a href="https://github.com/thaiat">https://github.com/thaiat</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Who are we ?</h2>
+                <p class="fragment" data-fragment-index="3"><strong>Vizelia</strong> bought by <strong>Schneider Electric</strong> in <strong>2011</strong>
+                </p>
+                <div class="row slide-content">
+                    <div class="col-xs-4 fragment" data-fragment-index="1">
+                        <img src="https://cloud.githubusercontent.com/assets/4806944/4645840/b8c48488-546d-11e4-9723-feda99581b83.jpg" alt="">
+                    </div>
+                    <div class="col-xs-4 fragment" data-fragment-index="2">
+                        <img src="https://cloud.githubusercontent.com/assets/4806944/4645842/bd905de8-546d-11e4-96a3-7f9fc011aef3.jpg" alt="">
+                    </div>
+                    <div class="col-xs-4 fragment" data-fragment-index="3">
+                        <img src="https://cloud.githubusercontent.com/assets/4806944/4645844/c001c210-546d-11e4-94be-4e09cbdde110.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <section data-state="money">
+
+            </section>
+
+
+            <section class="yoobic">
+                <h2 style="color:#3BCBAF">Yoobic</h2>
+                <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4646382/b0f2af82-5472-11e4-808d-de2319ed70aa.png" alt="">
+                <ul>
+                    <li><strong class="strong">Yoobic </strong>is a <strong class="strong">"Mobile productivity App"</strong>
+                    </li>
+                    <li><strong class="strong">Yoobic </strong>simplifies short term logistic processes and transform logistic <strong class="strong">costs</strong> into a stream of <strong class="strong">revenues</strong>
+                    </li>
+                    <li><strong class="strong">Yoobic </strong>is leveraging <strong class="strong">crowdsourced</strong> workforce and harnessing <strong class="strong">geolocation</strong> technology</li>
+                </ul>
+            </section>
+
+            <section data-background="#29AD8E">
+                <img src="https://cloud.githubusercontent.com/assets/4806944/4646509/f4577590-5473-11e4-8c2e-8e7ffff4f9bc.png" alt="" class="stretch">
+            </section>
+
+            <section>
+                <img src="http://www.edenvirginhair.com/wp-content/uploads/2014/08/we-are-recruiting.png" alt="" class="stretch fragment roll-in">
+            </section>
+            <section>
+                <h2>More platforms, more problems</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4646687/8fb4cece-5475-11e4-9bbd-0ccedf573dee.png" alt="">
+                    </div>
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4646690/9194efd0-5475-11e4-8b5d-2af193854818.png" alt="">
+                    </div>
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4646693/93688178-5475-11e4-97a0-c4adfed7b30a.png" alt="">
+                    </div>
+                </div>
+                <p>Do we really need to code for multiple platforms ?</p>
+            </section>
+
+
+            <section data-state="facebook">
+                <div class='row slide-content'>
+                    <div class="col-xs-4">
+                    </div>
+                    <div class="col-xs-8" style="top:-200px">
+
+                        <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                            &ldquo;The biggest mistake we've made as a company is betting on HTML5 over native.&rdquo;
+                        </blockquote>
+                        <p>Mark Zuckerber - 2012</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section data-state="obama">
+
+            </section>
+
+            <section data-state="louis">
+
+            </section>
+
+            <section>
+                <h2>It's not 2012 anymore</h2>
+                <p>Mobile devices and HTML5 stacks have rapidly evolved</p>
+            </section>
+
+            <section>
+                <h2>Where is famo.us stack ?</h2>
+                <img src=" https://cloud.githubusercontent.com/assets/4806944/4737941/2f5c7386-59f9-11e4-942a-ae00b38034d8.png" alt="" class="stretch fragment roll-in">
+
+            </section>
+
+
+            <section>
+                <h2>What is famo.us ?</h2>
+                <div class='row slide-content'>
+                    <div class="col-xl-6">
+                        <ul>
+                            <li class="fragment">Open source web rendering engine</li>
+                            <li class="fragment">Lets you build high-performance, cross-platform animations, imperatively</li>
+                            <li class="fragment">Alternative to native mobile apps.</li>
+                            <li class="fragment">100% Javascript</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+            <section>
+                <h2>Where is famo.us (Lab) ?</h2>
+
+                <div class='row'>
+                    <div class="col-xs-6">
+                        <img class="fragment" src="https://www.dropbox.com/sc/kwsxdghlaj6lyjd/AACYWhPK5nb9KzNgPDWi7Muoa?dl=1" alt="" style="width:450px;">
+                    </div>
+
+                    <div class="col-xs-6">
+                        <img class="fragment" src="https://www.dropbox.com/sc/yjm71dpohu5gyds/AAArqaD31hbCfaWwnNkfCZbBa?dl=1" alt="" style="width:450px;">
+                    </div>
+
+                </div>
+
+                <div class='row'>
+
+                    <div class="col-xs-6">
+                        <img class="fragment" src="https://www.dropbox.com/sc/4z6kuzwczjc3ke4/AAC5s6UYS5S6s3oVpnkcQX7Ka?dl=1" alt="" style="width:450px;">
+                    </div>
+                    <div class="col-xs-6">
+                        <img class="fragment" src="https://www.dropbox.com/sc/d8gqoyncn8z65xp/AACSVPmuY1gYhWacfJJb3zLIa?dl=1" alt="" style="width:450px;">
+
+                    </div>
+                </div>
+
+            </section>
+
+
+            <section>
+                <h2>How does famo.us work ?</h2>
+                <p>The render tree</p>
+                <div class="fragment roll-in" class="image">
+                    <img src="img/scene-graph.png" style="height: 500px;" />
+                    <p><small><em>Scene graph</em></small>
+                    </p>
+                </div>
+
+
+                <aside class="notes">
+                    Notes:
+                    <ul>
+                        <li>Instead of keeping track of content with the DOM, famo.us keeps track of its own representation of its render tree, using a data structure called a scene graph</li>
+                        <li>Scene graphs are commonly used in 3D platforms like OpenGL or DirectX, but are not common in the traditional web world.</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section>
+                <h2>How does famo.us work ? (cont.)</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-12">
+                        <ul>
+                            <li class="fragment">famo.us makes use of CSS3’s Matrix3D transforms, which gives it its GPU-accelerated performance</li>
+                            <li class="fragment">requestAnimationFrame (60 FPS)</li>
+                            <li class="fragment">Agnostic output layer (DOM, WebGL, ...native?!)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+
+            <section>
+                <h2>So what the famous-angular integration look like ?</h2>
+                
+                <div class='row slide-content'>
+                    <div class="col-xs-12">
+                        <ul>
+                            <li class="fragment">Maintain famo.us’s rendering performance</li>
+                            <li class="fragment">Support angular’s data-binding</li>
+                            <li class="fragment">Support using existing angular components (incl. third-party)</li>
+                            <li class="fragment">Support using existing famo.us components (incl. third-party)</li>              
+                        </ul>
+                    </div>
+                </div>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+            <section>
+                <h2>The result</h2>
+
+
+                <ul>
+                    <li class="fragment">This famo.us code:</li>
+                    <li class="fragment"><pre><code contenteditable>
+var myView = new View();
+var mySurface = new Surface();
+mySurface.setContent("<div>I'm a surface</div>");
+myView.add(mySurface);
+                </code></pre>
+                    </li>
+                    <li class="fragment">looks like this in famo.us/angular:</li>
+                    <li class="fragment"><pre><code contenteditable>
+<fa-view>
+  <fa-surface>
+    <div>I'm {{data.bound}}</div>
+  </fa-surface>
+</fa-view>
+
+                </code></pre>
+                    </li>
+                    <p class="fragment"><small><em>Notice how easy it is to databind!</em></small>
+                        <p class="fragment"><small><em>Awesome work Zack Brown &amp; David Graunke @thomastreet!</em></small>
+                        </p>
+                </ul>
+
+                <aside class="notes">
+                    <ul>
+                        <li>Since angular's scope hierarchy maps to famo.us's render tree hierarchy, this lets us write library directives that create famo.us's render tree components</li>
+                        <li>This has turned out to be an excellent use of angular's directives to extend the vocabulary of HTML</li>
+                        <li>famo.us/angular directives are essentially an HTML DSL for famo.us</li>
+
+                        <li>It makes it extremely easy to integrate famo.us with any existing HTML or Angular apps.</li>
+                        <li>It allows you to use Angular's data-binding within famo.us components.</li>
+                        <li>It encourages a clean architectural separation of concerns (view layer.)</li>
+                        <li>It allows you to use custom directives (pre-existing, third-party, or new ones) inside of your famo.us apps</li>
+                        <li>And of course you get the rest of the benefits of angular, like testability, organization, and streamlined data management.</li>
+
+                    </ul>
+                </aside>
+            </section>
+
+
+            <section>
+                <h2>How do I get started ?</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-12" style="font-sizes: 30px;">
+                        <ul>
+                            <li class="fragment">
+                                Download the starter kit
+                                <pre class="cmake" style="background-color:#3F3F3F;width:100%">                        
+<a href="http://code.famo.us/famous-angular/latest/famous-angular-starter-kit.zip?src=google-slide-deck" style="color:#E3CEAB">http://code.famo.us/famous-angular/latest/famous-angular-starter-kit.zip</a>
+                            </pre>
+                            </li>
+                            <li class="fragment">
+                                or install with Bower
+                                <pre><code data-trim contenteditable>                            
+bower install famous-angular
+
+</code></pre>
+                            </li>
+                            <li class="fragment" style="color:#17ff2e">
+                                or use a yeoman generator
+                                <pre><code data-trim contenteditable>
+yo famous-angular-ionic
+                                </code></pre>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <section data-state="boring">
+                <p style="margin-top:700px;color:white;text-shadow:2px 2px 2px #000000;font-weight:bolder">This is boooring... Show me the code</p>
+            </section>
+
+            <section>
+                <h2>Live coding</h2>
+                <p>Let's play with the baby and see how easy it is to build a flickr like mobile app</p>
+                <img src="http://i.giphy.com/hV2T82ysDmIDu.gif" class="stretch" alt="">
+            </section>
+
+            <section>
+
+                <h2>We are going to build famous-flickr</h2>
+                <video data-autoplay src="http://video.capptivate.co/videos/FlickrPTR/FlickrPTR.hyperesources/FlickrPTR.mov" loop height=700></video>
+            </section>
+
+
+            <section>
+                <h2>Let's wrap it up</h2>
+                <ul>
+                    <li>Scaffold template app with yo angular-famous-ionic</li>
+                    <li>Scaffold service photos</li>
+                    <li>Scaffold view controller home</li>
+                    <li>Use famo.us angular for rendering the home view</li>
+                    <ul>
+                        <li>fa-scroll-view</li>
+                        <li>fa-grid-layout</li>
+                    </ul>
+                </ul>
+            </section>
+
+
+            <section>
+                <h2>That's it !!!</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-6">
+                        <img class="no-border" style="margin-top:100px" src="https://cloud.githubusercontent.com/assets/4806944/4648942/50c27250-5486-11e4-9755-14dc2287dfce.png" alt="">
+
+                    </div>
+                    <div class="col-xs-6">
+                        <p>and one more thing...</p>
+                        <img class="fragment" style="border-radius:10px" src="http://www.edenvirginhair.com/wp-content/uploads/2014/08/we-are-recruiting.png" alt="">
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+
+    <script>
+        // Full list of configuration options available here:
+         // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+            slideNumber: false,
+            theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+            transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [{
+                src: 'lib/js/classList.js',
+                condition: function() {
+                    return !document.body.classList;
+                }
+            }, {
+                src: 'plugin/markdown/marked.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/markdown/markdown.js',
+                condition: function() {
+                    return !!document.querySelector('[data-markdown]');
+                }
+            }, {
+                src: 'plugin/highlight/highlight.js',
+                async: true,
+                callback: function() {
+                    hljs.initHighlightingOnLoad();
+                }
+            }, {
+                src: 'plugin/zoom-js/zoom.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }, {
+                src: 'plugin/notes/notes.js',
+                async: true,
+                condition: function() {
+                    return !!document.body.classList;
+                }
+            }]
+        });
+    </script>
+
+</body>
+
+</html>

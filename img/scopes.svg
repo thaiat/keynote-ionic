@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 436.5 426" enable-background="new 0 0 436.5 426" xml:space="preserve">
+<rect x="0.4" y="-0.1" fill="#FFFFFA" width="436" height="426"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="180.4" y1="184.9" x2="108.4" y2="277"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="180.4" y1="180.7" x2="252.4" y2="277"/>
+<circle cx="252.4" cy="84.7" r="34.4"/>
+<circle cx="180.4" cy="181" r="34.4"/>
+<circle cx="324.4" cy="181" r="34.4"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="252.4" y1="88.9" x2="180.4" y2="181"/>
+<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="252.4" y1="84.7" x2="324.4" y2="181"/>
+<text transform="matrix(1 0 0 1 242.3562 94.8274)" fill="#FFFFFA" font-family="'MyriadPro-Semibold'" font-size="31.5">A</text>
+<text transform="matrix(1 0 0 1 171.3011 190.8274)" fill="#FFFFFA" font-family="'MyriadPro-Semibold'" font-size="31.5">B</text>
+<text transform="matrix(1 0 0 1 314.1121 190.8274)" fill="#FFFFFA" font-family="'MyriadPro-Semibold'" font-size="31.5">C</text>
+<circle cx="108.4" cy="277" r="34.4"/>
+<circle cx="252.4" cy="277" r="34.4"/>
+<text transform="matrix(1 0 0 1 97.6155 286.8274)" fill="#FFFFFA" font-family="'MyriadPro-Semibold'" font-size="31.5">D</text>
+<text transform="matrix(1 0 0 1 243.2615 286.8274)" fill="#FFFFFA" font-family="'MyriadPro-Semibold'" font-size="31.5">E</text>
+<text transform="matrix(1 0 0 1 163.7776 77.8846)"><tspan x="0" y="0" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Compile</tspan><tspan x="0.5" y="16.8" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Pre-Link</tspan></text>
+<text transform="matrix(1 0 0 1 87.7776 175.2179)"><tspan x="0" y="0" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Compile</tspan><tspan x="0.5" y="16.8" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Pre-Link</tspan></text>
+<text transform="matrix(1 0 0 1 173.7776 303.8846)"><tspan x="0" y="0" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Compile</tspan><tspan x="0.5" y="16.8" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Pre-Link</tspan></text>
+<text transform="matrix(1 0 0 1 236.7778 192.5513)"><tspan x="0" y="0" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Compile</tspan><tspan x="0.5" y="16.8" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Pre-Link</tspan></text>
+<text transform="matrix(1 0 0 1 15.111 273.5512)"><tspan x="0" y="0" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Compile</tspan><tspan x="0.5" y="16.8" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Pre-Link</tspan></text>
+<text transform="matrix(1 0 0 1 140.5366 265.0245)" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Post-Link</text>
+<text transform="matrix(1 0 0 1 292.5366 286.8275)" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Post-Link</text>
+<text transform="matrix(1 0 0 1 210.5366 162.3578)" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Post-Link</text>
+<text transform="matrix(1 0 0 1 363.5366 184.8847)" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Post-Link</text>
+<text transform="matrix(1 0 0 1 288.87 84.6911)" fill="#3AC3CE" font-family="'MyriadPro-Semibold'" font-size="14">Post-Link</text>
+<g>
+	<g>
+		<line fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" x1="158.4" y1="56.9" x2="14.7" y2="252"/>
+		<g>
+			<polygon fill="#3AC3CE" points="14.4,246.8 15.1,251.6 19.8,250.8 18.1,253.2 13.4,253.9 12.7,249.1 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" d="M53.4,305.9c0,0,58,60.9,97-17"/>
+		<g>
+			<polygon fill="#3AC3CE" points="151.5,294 150.1,289.4 145.5,290.8 146.8,288.3 151.4,286.8 152.8,291.4 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" d="M167.4,242.6c0,0,35.2-31.7,35,32.1"/>
+		<g>
+			<polygon fill="#3AC3CE" points="199,270.8 202.4,274.1 205.8,270.7 205.8,273.6 202.4,277 199,273.6 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" d="M202.4,334.4c0,0,111,34,115.9-21.5"/>
+		<g>
+			<polygon fill="#3AC3CE" points="321.3,317.1 318.2,313.5 314.6,316.6 314.8,313.8 318.4,310.6 321.5,314.2 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" d="M318.4,259c0,0-54.9-40-80-37.1
+			c-23.9,2.7-17.7-29.1-12.7-44.5"/>
+		<g>
+			<polygon fill="#3AC3CE" points="227.7,182.2 225.5,178 221.3,180.2 222.1,177.4 226.4,175.2 228.6,179.5 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" d="M246.4,140.9c0,0,32.6-8.6,31.1,26.7"/>
+		<g>
+			<polygon fill="#3AC3CE" points="274.3,163.5 277.5,167 281.1,163.8 280.9,166.7 277.4,169.9 274.2,166.3 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" d="M290.4,217.1c0,0,69.6,23.9,85.2-16.1"/>
+		<g>
+			<polygon fill="#3AC3CE" points="377.3,206 375.3,201.6 371,203.5 372,200.8 376.4,198.9 378.3,203.3 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line fill="none" stroke="#3AC3CE" stroke-width="2" stroke-miterlimit="10" x1="376.4" y1="154.9" x2="320" y2="96.5"/>
+		<g>
+			<polygon fill="#3AC3CE" points="325.2,97 320.4,96.9 320.3,101.7 318.3,99.6 318.4,94.8 323.2,94.9 			"/>
+		</g>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 139.8382 21.1232)"><tspan x="0" y="0" font-family="'MyriadPro-Semibold'" font-size="16.5945">Start at root,</tspan><tspan x="-51.1" y="19.9" font-family="'MyriadPro-Semibold'" font-size="16.5945">traverse counter-clockwise</tspan></text>
+<text transform="matrix(1 0 0 1 15.6269 361.6063)" font-family="'MyriadPro-Semibold'" font-size="16.5945">Compilation order:</text>
+<text transform="matrix(1 0 0 1 15.9982 384.982)"><tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="14">Compile A, Pre-Link A, Compile B, Pre-Link B, Compile D, Pre-Link D</tspan><tspan x="0" y="16.8" font-family="'MyriadPro-Regular'" font-size="14">Post-Link D, Compile E, Pre-Link E, Post-Link E, Post-Link B</tspan><tspan x="0" y="33.6" font-family="'MyriadPro-Regular'" font-size="14">Compile C, Pre-Link C, Post-Link C, Post-Link A</tspan></text>
+</svg>
