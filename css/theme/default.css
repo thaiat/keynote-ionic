@@ -16,14 +16,14 @@
  * GLOBAL STYLES
  *********************************************/
  body {
-    background: #1c1e20;
-    background: -moz-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #555a5f), color-stop(100%, #1c1e20));
-    background: -webkit-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-    background: -o-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-    background: -ms-radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-    background: radial-gradient(center, circle cover, #555a5f 0%, #1c1e20 100%);
-    background-color: #2b2b2b;
+    background: #0099FF;
+    background: -moz-radial-gradient(center, circle cover, #0099FF 0%, #3366FF 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #0099FF), color-stop(100%, #3366FF));
+    background: -webkit-radial-gradient(center, circle cover, #0099FF 0%, #3366FF 100%);
+    background: -o-radial-gradient(center, circle cover, #0099FF 0%, #3366FF 100%);
+    background: -ms-radial-gradient(center, circle cover, #0099FF 0%, #3366FF 100%);
+    background: radial-gradient(center, circle cover, #0099FF 0%, #3366FF 100%);
+    background-color: #3366FF;
 }
 .reveal {
     font-family:"Lato", sans-serif;
@@ -47,9 +47,16 @@
     margin-left: 15px;
 }
 .reveal .footer-logos .angularjs {
-    width: 84px;
+    width: 120px;
     margin-left: 15px;
     margin-top: -30px;
+}
+.reveal .footer-logos .ionic {
+    width: 35px;
+    margin-left: 15px;
+    margin-top: -30px;
+    color:blue;
+    fill: red;
 }
 .reveal ul li {
     margin-bottom: 25px;
@@ -64,7 +71,7 @@
  *********************************************/
  .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
     margin: 0 0 20px 0;
-    color: rgb(58, 195, 206);
+    color: white;
     font-family:"League Gothic", Impact, sans-serif;
     line-height: 0.9em;
     letter-spacing: 0.02em;
@@ -78,7 +85,7 @@
  * LINKS
  *********************************************/
  .reveal a:not(.image) {
-    color: #13daec;
+    color: #FFF;
     text-decoration: none;
     -webkit-transition: color .15s ease;
     -moz-transition: color .15s ease;
@@ -87,7 +94,7 @@
     transition: color .15s ease;
 }
 .reveal a:not(.image):hover {
-    color: #71e9f4;
+    color: #FFF;
     text-shadow: none;
     border: none;
 }
@@ -123,28 +130,28 @@
  * NAVIGATION CONTROLS
  *********************************************/
  .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-    border-right-color: #13daec;
+    border-right-color: #fff;
 }
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-    border-left-color: #13daec;
+    border-left-color: #fff;
 }
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-    border-bottom-color: #13daec;
+    border-bottom-color: #fff;
 }
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-    border-top-color: #13daec;
+    border-top-color: #fff;
 }
 .reveal .controls div.navigate-left.enabled:hover {
-    border-right-color: #71e9f4;
+    border-right-color: #fff;
 }
 .reveal .controls div.navigate-right.enabled:hover {
-    border-left-color: #71e9f4;
+    border-left-color: #fff;
 }
 .reveal .controls div.navigate-up.enabled:hover {
-    border-bottom-color: #71e9f4;
+    border-bottom-color: #fff;
 }
 .reveal .controls div.navigate-down.enabled:hover {
-    border-top-color: #71e9f4;
+    border-top-color: #fff;
 }
 /*********************************************
  * PROGRESS BAR
@@ -164,7 +171,7 @@
  * SLIDE NUMBER
  *********************************************/
  .reveal .slide-number {
-    color: #13daec;
+    color: #fff;
 }
 .reveal pre {
     width:100%;
@@ -173,37 +180,38 @@
     color:#17ff2e;
 }
 .yoobic .strong {
-    color: #3BCBAF;
+    color: #fff;
 }
-html.money body {
+.money body {
     background:url("https://cloud.githubusercontent.com/assets/4806944/4646184/1af61a92-5471-11e4-8f40-a2c69206b49c.gif");
     background-position:center;
     background-size: 100%;
     background-color:black;
     background-repeat: no-repeat;
 }
-html.facebook body {
+.facebook body {
     background:url("http://www.lifenews.com/wp-content/uploads/2014/02/markzuckerberg.jpg");
     background-position:center;
     background-size: 100%;
     background-color:black;
     background-repeat: no-repeat;
 }
-html.obama body {
+.obama body {
     background:url("http://i.giphy.com/IMuqnp96sdhyE.gif");
     background-position:center;
     background-size: 100%;
     background-color:black;
     background-repeat: no-repeat;
 }
-html.louis body {
+.louis body {
     background:url("http://i.giphy.com/8mZK9do4ZvxQc.gif");
     background-position:center;
     background-size: 100%;
     background-color:black;
     background-repeat: no-repeat;
 }
-html.boring body {
+
+.boring body {
     background:url("http://i.giphy.com/jSxK33dwEMbkY.gif");
     background-position:center;
     background-size: 100%;
@@ -211,8 +219,24 @@ html.boring body {
     background-repeat: no-repeat;
 }
 
-html.recruiting body {
+.recruiting body {
     background:url("http://www.edenvirginhair.com/wp-content/uploads/2014/08/we-are-recruiting.png");
+    background-position:center;
+    background-size: 100%;
+    background-color:black;
+    background-repeat: no-repeat;
+}
+
+.rainman1 body {
+    background:url("https://cloud.githubusercontent.com/assets/4806944/4852934/169c42e8-6081-11e4-8702-bb4c98246a6d.gif");
+    background-position:center;
+    background-size: 100%;
+    background-color:black;
+    background-repeat: no-repeat;
+}
+
+.rainman2 body {
+    background:url("https://cloud.githubusercontent.com/assets/4806944/4852937/180c3ee4-6081-11e4-9a68-7edd231925be.gif");
     background-position:center;
     background-size: 100%;
     background-color:black;

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>famo.us Framework</title>
+    <title>ionic Framework</title>
 
     <meta name="description" content="Famo.us is a free, open source JavaScript framework that helps you create smooth, complex UIs for any screen">
     <meta name="author" content="Avi Haiat">
@@ -16,6 +16,7 @@
 
 
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="lib/css/font-awesome.css">
     <link rel="stylesheet" href="css/reveal.min.css">
     <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
@@ -46,8 +47,8 @@
             <a href="http://yoobic.com" style="position:relative; top:35px; left:28px">
                 <img class="ts no-border" src="img/yoobic.svg" /><small style="position:relative;top:-35px; left:-18px;color:white;letter-spacing:0.4em">YOOBIC</small><small style="font-size:0.3em;position:relative;top:-10px; left:-150px;color:white">Collective intelligence</small>
             </a>
-            <a href="http://famo.us" style="position:relative; left:-100px">
-                <img class="famous no-border" src="img/famous-parchment.svg" />
+            <a href="http://ionicframework.com/" style="position:relative; left:-100px">
+                <img id="ionic-logo" class="ionic no-border" src="img/logo-ionic-white.png" />
             </a>
             <a href="http://angularjs.org" style="position:relative; left:-100px">
                 <img class="angularjs no-border" src="img/angularjs.svg" />
@@ -57,15 +58,13 @@
         <!-- Any section element inside of this container is displayed as a slide -->
         <div class="slides">
             <section>
-                <h2>famo.us</h2>
-                <p>Famo.us is a free, open source JavaScript framework that helps you create smooth, complex UIs for any screen</p>
+                <h2>ionic framework</h2>
+                <p>The beautiful open source framework for developing hybrid mobile apps with HTML5</p>
                 <a href="http://disrupt.famo.us/periodic402/">
-                    <img src="img/famous-parchment.svg" class="no-border" style="width: 250px; margin-top: 45px;" />
+                    <img src="img/logo-ionic-white.png" class="no-border" style="width: 250px; margin-top: 45px;" />
                 </a>
                 <p style="margin-top:100px">
                     <small>Presented by <br><a href="http://thaiat.github.io">Avi&nbsp;&nbsp;Haiat</a> - <a href="mailto:thaiat@yoobic.com">thaiat@yoobic.com</a></small>
-                    <br>
-                    <small><a href="http://thaiat.github.io">Gilles&nbsp;&nbsp;Haiat</a> - <a href="mailto:ghaiat@yoobic.com">ghaiat@yoobic.com</a></small>
                 </p>
 
                 <aside class="notes">
@@ -79,20 +78,22 @@
             </section>
 
             <section>
-                <h2>Who are we ?</h2>
+                <h2>Who am I ?</h2>
                 <ul>
-                    <li><strong>name : </strong>Avi Haiat, Gilles Haiat</li>
-                    <li><strong>mail : </strong><a href="mailto:thaiat@yoobic.com">thaiat@yoobic.com, ghaiat@yoobic.com</a>
+                    <li><span style="font-family:fontawesome;font-style:normal;margin-right:40px" class="fa fa-user"></span>Avi Haiat</li>
+                    <li><span style="font-family:fontawesome;font-style:normal;margin-right:30px" class="fa fa-envelope"></span><a href="mailto:thaiat@yoobic.com">thaiat@yoobic.com</a>
                     </li>
-                    <li><strong>blog : </strong><a href="https://thaiat.github.io">http://thaiat.github.io</a>
+                    <li><span style="font-family:fontawesome;font-style:normal;margin-right:40px;margin-left:6px" class="fa fa-map-marker"></span>Tel Aviv</li>
+                    <li><span style="font-family:fontawesome;font-style:normal;margin-right:35px" class="fa fa-twitter"></span>@thaiat</li>
+                    <li><span style="font-family:fontawesome;font-style:normal;margin-right:40px" class="fa fa-rss"></span><a href="https://thaiat.github.io">http://thaiat.github.io</a>
                     </li>
-                    <li><strong>github : </strong><a href="https://github.com/thaiat">https://github.com/thaiat</a>
+                    <li><span style="font-family:fontawesome;font-style:normal;margin-right:40px" class="fa fa-github"></span><a href="https://github.com/thaiat">https://github.com/thaiat</a>
                     </li>
                 </ul>
             </section>
 
             <section>
-                <h2>Who are we ?</h2>
+                <h2>Who am I ?</h2>
                 <p class="fragment" data-fragment-index="3"><strong>Vizelia</strong> bought by <strong>Schneider Electric</strong> in <strong>2011</strong>
                 </p>
                 <div class="row slide-content">
@@ -153,7 +154,7 @@
                 <div class='row slide-content'>
                     <div class="col-xs-4">
                     </div>
-                    <div class="col-xs-8" style="top:-200px">
+                    <div class="col-xs-8" style="top:-200px;left:100px">
 
                         <blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
                             &ldquo;The biggest mistake we've made as a company is betting on HTML5 over native.&rdquo;
@@ -180,87 +181,45 @@
             </section>
 
             <section>
-                <h2>Where is famo.us stack ?</h2>
+                <h2>Where is ionic stack ?</h2>
                 <img src=" https://cloud.githubusercontent.com/assets/4806944/4737941/2f5c7386-59f9-11e4-942a-ae00b38034d8.png" alt="" class="stretch fragment roll-in">
 
             </section>
 
 
             <section>
-                <h2>What is famo.us ?</h2>
-                <div class='row slide-content'>
-                    <div class="col-xl-6">
-                        <ul>
-                            <li class="fragment">Open source web rendering engine</li>
-                            <li class="fragment">Lets you build high-performance, cross-platform animations, imperatively</li>
-                            <li class="fragment">Alternative to native mobile apps.</li>
-                            <li class="fragment">100% Javascript</li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <aside class="notes">
-                    Notes:
-                </aside>
-            </section>
-
-            <section>
-                <h2>Where is famo.us (Lab) ?</h2>
-
+                <h2>What is ionic ?</h2>
+                <p>Web technologies you already know and love</p>
                 <div class='row'>
-                    <div class="col-xs-6">
-                        <img class="fragment" src="https://www.dropbox.com/sc/kwsxdghlaj6lyjd/AACYWhPK5nb9KzNgPDWi7Muoa?dl=1" alt="" style="width:450px;">
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851560/8270c9a2-6073-11e4-83f2-f0655ccc7c43.png" alt="" width=200>
                     </div>
-
-                    <div class="col-xs-6">
-                        <img class="fragment" src="https://www.dropbox.com/sc/yjm71dpohu5gyds/AAArqaD31hbCfaWwnNkfCZbBa?dl=1" alt="" style="width:450px;">
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851562/86983484-6073-11e4-801c-f9ba39fef7dc.png" alt="" width=200>
                     </div>
-
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851563/892964ca-6073-11e4-8e35-50fc418112bc.png" alt="" width=200>
+                    </div>
                 </div>
 
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+
+            <section>
+                <h2>What is ionic ?</h2>
+                <p>Web technologies you already know and love</p>
                 <div class='row'>
-
-                    <div class="col-xs-6">
-                        <img class="fragment" src="https://www.dropbox.com/sc/4z6kuzwczjc3ke4/AAC5s6UYS5S6s3oVpnkcQX7Ka?dl=1" alt="" style="width:450px;">
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851663/a2753660-6074-11e4-854a-e40cf2c0a612.png" alt="" width=250 height=250>
                     </div>
-                    <div class="col-xs-6">
-                        <img class="fragment" src="https://www.dropbox.com/sc/d8gqoyncn8z65xp/AACSVPmuY1gYhWacfJJb3zLIa?dl=1" alt="" style="width:450px;">
-
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851754/4140e06e-6075-11e4-9836-304c18b5c29c.gif" alt="" width=250 height=250>
                     </div>
-                </div>
-
-            </section>
-
-
-            <section>
-                <h2>How does famo.us work ?</h2>
-                <p>The render tree</p>
-                <div class="fragment roll-in" class="image">
-                    <img src="img/scene-graph.png" style="height: 500px;" />
-                    <p><small><em>Scene graph</em></small>
-                    </p>
-                </div>
-
-
-                <aside class="notes">
-                    Notes:
-                    <ul>
-                        <li>Instead of keeping track of content with the DOM, famo.us keeps track of its own representation of its render tree, using a data structure called a scene graph</li>
-                        <li>Scene graphs are commonly used in 3D platforms like OpenGL or DirectX, but are not common in the traditional web world.</li>
-                    </ul>
-                </aside>
-            </section>
-
-            <section>
-                <h2>How does famo.us work ? (cont.)</h2>
-                <div class='row slide-content'>
-                    <div class="col-xs-12">
-                        <ul>
-                            <li class="fragment">famo.us makes use of CSS3’s Matrix3D transforms, which gives it its GPU-accelerated performance</li>
-                            <li class="fragment">requestAnimationFrame (60 FPS)</li>
-                            <li class="fragment">Agnostic output layer (DOM, WebGL, ...native?!)</li>
-                        </ul>
+                    <div class="col-xs-4">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851678/bd5cea7c-6074-11e4-9af1-126bd9490d7c.png" alt="" width=250 height=250>
                     </div>
                 </div>
 
@@ -269,20 +228,21 @@
                 </aside>
             </section>
 
+            <section data-state="rainman1">
+
+            </section>
+
+
+            <section data-state="rainman2">
+
+            </section>
 
             <section>
-                <h2>So what the famous-angular integration look like ?</h2>
-                
-                <div class='row slide-content'>
-                    <div class="col-xs-12">
-                        <ul>
-                            <li class="fragment">Maintain famo.us’s rendering performance</li>
-                            <li class="fragment">Support angular’s data-binding</li>
-                            <li class="fragment">Support using existing angular components (incl. third-party)</li>
-                            <li class="fragment">Support using existing famo.us components (incl. third-party)</li>              
-                        </ul>
-                    </div>
-                </div>
+                <h2>Best friend with angularjs</h2>
+                <p>UI components are angularjs directives</p>
+
+                <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853216/eb5e7efe-6083-11e4-9f4a-5ef79471fb89.png" alt="" xwidth=250 xheight=250>
+
 
                 <aside class="notes">
                     Notes:
@@ -290,47 +250,283 @@
             </section>
 
             <section>
-                <h2>The result</h2>
+                <h2>CSS generated by Sass</h2>
 
-
+                <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851911/8aaee8da-6076-11e4-8cff-7a3f7c20f495.png" alt="" width=250 xheight=250>
                 <ul>
-                    <li class="fragment">This famo.us code:</li>
-                    <li class="fragment"><pre><code contenteditable>
-var myView = new View();
-var mySurface = new Surface();
-mySurface.setContent("<div>I'm a surface</div>");
-myView.add(mySurface);
-                </code></pre>
-                    </li>
-                    <li class="fragment">looks like this in famo.us/angular:</li>
-                    <li class="fragment"><pre><code contenteditable>
-<fa-view>
-  <fa-surface>
-    <div>I'm {{data.bound}}</div>
-  </fa-surface>
-</fa-view>
-
-                </code></pre>
-                    </li>
-                    <p class="fragment"><small><em>Notice how easy it is to databind!</em></small>
-                        <p class="fragment"><small><em>Awesome work Zack Brown &amp; David Graunke @thomastreet!</em></small>
-                        </p>
+                    <li>Quickly give your app its own look and feel</li>
+                    <li>CSS designed to be overriden</li>
+                    <li>Stand-alone CSS (independent of ionic's javascript)</li>
                 </ul>
 
                 <aside class="notes">
-                    <ul>
-                        <li>Since angular's scope hierarchy maps to famo.us's render tree hierarchy, this lets us write library directives that create famo.us's render tree components</li>
-                        <li>This has turned out to be an excellent use of angular's directives to extend the vocabulary of HTML</li>
-                        <li>famo.us/angular directives are essentially an HTML DSL for famo.us</li>
-
-                        <li>It makes it extremely easy to integrate famo.us with any existing HTML or Angular apps.</li>
-                        <li>It allows you to use Angular's data-binding within famo.us components.</li>
-                        <li>It encourages a clean architectural separation of concerns (view layer.)</li>
-                        <li>It allows you to use custom directives (pre-existing, third-party, or new ones) inside of your famo.us apps</li>
-                        <li>And of course you get the rest of the benefits of angular, like testability, organization, and streamlined data management.</li>
-
-                    </ul>
+                    Notes:
                 </aside>
+            </section>
+
+            <section>
+                <h2>Performance obsessed</h2>
+
+                <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4851954/e4c01d26-6076-11e4-8e19-3cf408ecee91.png" alt="" width=250 xheight=250>
+                <br>
+                <ul>
+                    <li>Hardware accelerated animations</li>
+                    <li>Minimal DOM manipulation</li>
+                    <li>Zero jQuery</li>
+                </ul>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+            <section>
+                <h2>Native focused</h2>
+
+                <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4852011/55b97f22-6077-11e4-9e6a-9ab057739f60.png" alt="" width=250 xheight=250>
+                <br>
+                <ul>
+                    <li>Built to work with Cordova / Phonegap</li>
+                    <li>Include its own cli</li>
+                </ul>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+            <section>
+                <h2>Ionic icons</h2>
+
+                <img class="no-border stretch" src="https://cloud.githubusercontent.com/assets/4806944/4852031/7f7b0cfe-6077-11e4-8e11-0217251201d5.png" alt="" xwidth=500 xheight=250>
+
+                <aside class="notes">
+                    Notes:
+                </aside>
+            </section>
+
+            <section>
+                <h2>Lists</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4852120/3b2a4bb8-6078-11e4-8603-71a5ea5723a4.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+                        <ul>
+                            <li>css only</li>
+                            <li>no javascript / angularjs</li>
+                        </ul>
+                        <pre><code contenteditable data-trim>
+<div class="list"> 
+   <div class="item item-divider">
+      Candy Bars
+   </div>
+   <a class="item" href="#">
+      Butterfinger
+   </a> 
+   <a class="item" href="#">
+      Kit Kat
+   </a>
+   ...
+</div>
+                        </code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Complex Lists</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4852203/562d7394-6079-11e4-8d83-6fd4a1f08738.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+                        <ul>
+                            <li>angularjs directive</li>
+                            <li>buttons exposes by swiping</li>
+                            <li>Reorder / Delete</li>
+
+                        </ul>
+                        <pre><code  scontenteditable style="word-wrap:break-word;word-break:break-word;"><ion-list>
+    <ion-item ng-repeat="item in items"
+option-buttons="buttons"
+class="item-thumbnail-left">
+       <img ng-src="{{ item.pic }}">
+       <h2>{{ item.name }}</h2>
+       <p>{{ item.quote }}</p>
+    </ion-item>
+</ion-list></code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Tabs</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4852588/6ed8d5ce-607d-11e4-8732-6b89f462a248.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+                        <ul>
+                            <li>nested views</li>
+                            <li>each tab has its own nav history</li>
+                        </ul>
+                        <pre><code  scontenteditable style="word-wrap:break-word;word-break:break-word;"><ion-tabs tabs-type="tabs-icon-only">
+   <ion-tab title="Home" icon="ion-star"> 
+      <ion-nav-view name="home"></ion-nav-view>
+   </ion-tab>
+
+   <ion-tab title="Feedback" icon="ion-thumbsdown">
+      <ion-nav-view name="feedback"></ion-nav-view>
+   </ion-tab>
+
+   <ion-tab title="Messages" icon="ion-chat-working">
+      <ion-nav-view name="msg"></ion-nav-view>
+   </ion-tab>
+</ion-tabs>
+</code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section>
+                <h2>Navigation</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853245/1493e020-6084-11e4-9d8f-a6dd678a1438.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+                        <ul>
+                            <li>shows back button when possible</li>
+                            <li>each tab has its own nav history</li>
+                            <li>works with android back button</li>
+                        </ul>
+                        <pre><code  scontenteditable style="word-wrap:break-word;word-break:break-word;"><ion-nav-bar back-button-icon="ion-chevron-left" back-button-type="button-icon">
+</ion-nav-bar> 
+
+<ion-nav-view animation="slide-left-right">
+</ion-nav-view>
+
+</code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Side Menu</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853253/259cf46a-6084-11e4-852d-af28abecf8e0.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+                        <ul>
+                            <li>shows back button when possible</li>
+                            <li>each tab has its own nav history</li>
+                            <li>works with android back button</li>
+                        </ul>
+                        <pre><code  scontenteditable style="word-wrap:break-word;word-break:break-word;"><ion-side-menus>
+   <ion-side-menu-content>
+      <ion-nav-view></ion-nav-view>
+   </ion-side-menu-content> 
+   <ion-side-menu side="left">
+      <header class="bar bar-header bar-positive">
+         <div class="title">Projects</div>
+      </header>
+      <ion-content has-header="true">
+         <div class="list"> 
+            <a href="#/work" class="item">Work</a>
+            <a href="#/home" class="item">Home</a>
+         </div>
+      </ion-content>
+   </ion-side-menu>
+</ion-side-menus>
+
+</code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Slide Box</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853260/339e6a80-6084-11e4-9e01-c7c440c8fb5d.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+
+                        <pre><code  scontenteditable style="word-wrap:break-word;word-break:break-word;"><ion-slide-box on-slide-changed="slideHasChanged($index)">
+   <ion-slide> Slide 1 </ion-slide>
+   <ion-slide> Slide 2 </ion-slide>
+   <ion-slide> Slide 3 </ion-slide>
+</ion-slide-box>
+</code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Action Sheet</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853269/45f98f34-6084-11e4-922e-6b194e62db87.png" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+
+                        <pre><code  scontenteditable data-trim style="word-wrap:break-word;word-break:break-word;">
+$ionicActionSheet.show({
+   titleText: 'Modify your album',
+   buttons: [{
+      text: 'Share'
+      }, {
+      text: 'Move'
+   }],
+   destructiveText: 'Delete',
+   cancelText: 'Cancel',
+   buttonClicked: function(index) {
+      console.log('BUTTON CLICKED', index);
+      return true;
+   }
+});
+
+</code></pre>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Pull to Refresh</h2>
+                <div class='row slide-content'>
+                    <div class="col-xs-3">
+                        <img class="no-border" src="https://cloud.githubusercontent.com/assets/4806944/4853281/622e6b52-6084-11e4-977d-0cb7186c9c2f.gif" style="position:relative;left:-100px" alt="" width=250 height=500>
+                    </div>
+                    <div class="col-xs-9">
+
+                        <pre><code  scontenteditable data-trim style="word-wrap:break-word;word-break:break-word;">
+<ion-content> 
+   <ion-refresher on-refresh="refreshData()">
+   </ion-refresher>
+   <!-- content -->
+</ion-content>
+</code></pre>
+                    </div>
+
+                </div>
+
             </section>
 
 
@@ -341,13 +537,13 @@ myView.add(mySurface);
                         <ul>
                             <li class="fragment">
                                 Download the starter kit
-                                <pre class="cmake" style="background-color:#3F3F3F;width:100%">                        
+                                <pre class="cmake" style="background-color:#3F3F3F;width:100%">
 <a href="http://code.famo.us/famous-angular/latest/famous-angular-starter-kit.zip?src=google-slide-deck" style="color:#E3CEAB">http://code.famo.us/famous-angular/latest/famous-angular-starter-kit.zip</a>
                             </pre>
                             </li>
                             <li class="fragment">
                                 or install with Bower
-                                <pre><code data-trim contenteditable>                            
+                                <pre><code data-trim contenteditable>
 bower install famous-angular
 
 </code></pre>
