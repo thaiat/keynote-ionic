@@ -1,7 +1,10 @@
-* Change index.html to reference main.min.css instead of main.css
+## Preparation
+
+* codio startup.sh
 * Import facebook big and small logo
 * Remove source map for gulp style
-* Fix title app
+* Change browsersync port and tunnel
+* Change auto save
 
 ### index.html
 ```html
@@ -11,9 +14,12 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, target-densitydpi=device-dpi">
     <title>Facebook</title>
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/main.min.css">
 </head>
 ```
+
+
+## Demo
 
 ### Scaffold module ngFacebook and common
 ```
@@ -39,9 +45,14 @@ cd client/scripts/common/views
 touch login.html tabs.html requests.html messages.html notifications.html more.html newsfeed.html
 ```
 
+Launch
+```
+gulp karma
+gulp browsersync
+```
+
 ### Populate facebook.js
 ```js
-
 'use strict';
 var servicename = 'facebook';
 
@@ -228,7 +239,17 @@ module.exports = function(app) {
 
 ```
 
+### Remove routes from ngFacebook
 
+### Add the following code to main.js
+```js
+ app.run(function($rootScope, $window, $state, facebook) {
+        facebook.init('323666037785577');
+        if(facebook.oauthCallback($window.location.href)) {
+            $state.go('tabs.newsfeed');
+        }
+    });
+```
 
 
 ### main.scss
@@ -239,12 +260,7 @@ $fb_lighter_blue:       #afbdd4 !default;
 $fb_lightest_blue:      #d8dfea !default;
 
 ion-nav-view {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
+    background-color: transparent !important;
 }
 
 .item-divider {
@@ -285,12 +301,15 @@ ion-nav-view {
     color:#6A6A74 !important;
 }
 
+.gray-background {
+    background-color: rgb(210, 213, 218);
+}
 .padding {
     color:gray;
 }
 ```
 
-### main.js
+### PAS BESOIN main.js
 * add ionic as a dependency
 * add run
 
@@ -318,12 +337,11 @@ ion-nav-view {
 ### common/index.js
 change the routes
 ```js
-$urlRouterProvider.otherwise('/login');
             $stateProvider
                 .state('login', {
                     url: '/login',
                     template: require('./views/login.html'),
-                    controller: fullaname + '.login as vm'
+                    controller: fullname + '.login as vm'
                 })
                 .state('tabs', {
                     url: '/tabs',
@@ -335,7 +353,7 @@ $urlRouterProvider.otherwise('/login');
                     views: {
                         'tab-newsfeed': {
                             template: require('./views/newsfeed.html'),
-                            controller: fullaname + '.newsfeed as vm'
+                            controller: fullname + '.newsfeed as vm'
                         }
                     }
                 })
@@ -344,7 +362,7 @@ $urlRouterProvider.otherwise('/login');
                     views: {
                         'tab-requests': {
                             template: require('./views/requests.html'),
-                            controller: fullaname + '.newsfeed as vm'
+                            controller: fullname + '.newsfeed as vm'
                         }
                     }
                 })
@@ -372,16 +390,10 @@ $urlRouterProvider.otherwise('/login');
                         }
                     }
                 });
+    $urlRouterProvider.otherwise('/login');
 ```
 
-and add a run fn
-```js
- app.run(function($rootScope, $window, $state, facebook) {
-        if (facebook.oauthCallback($window.location.href)) {
-            $state.go('tabs.newsfeed');
-        }
-    });
-```
+
 
 ### index.html
 change to the ui-view to
@@ -424,15 +436,17 @@ module.exports = function(app) {
             <div class="button-block" style="text-align:center">
                 <img src="images/facebook-title.png" width="60%">
             </div>
-            <button class="button button-block button-positive fb-button-login">Login</button>
+            <button class="button button-block button-positive fb-button-login" >Login</button>
         </div>
     </ion-content>
 </ion-view>
 ```
 
+
+
 ### tabs.html
 ```html
-<ion-tabs class="tabs-icon-top tabs-light fbnews fade-in-not-out">
+<ion-tabs class="tabs-icon-top tabs-light fbnews xfade-in-not-out">
 
   <ion-tab title="News Feed" icon="icon ion-document-text"  ui-sref="tabs.newsfeed">
     <ion-nav-view name="tab-newsfeed"></ion-nav-view>
@@ -457,34 +471,123 @@ module.exports = function(app) {
 </ion-tabs>
 ```
 
+
+
+### notifications.html
+```html
+<ion-view>
+	<ion-header-bar class="bar-positive bar-fb-blue">
+		<h1 class="title">Notifications</h1>
+	</ion-header-bar>
+	<ion-content></ion-content>
+</ion-view>
+```
+
+### messages.html
+```html
+<ion-view>
+	<ion-header-bar class="bar-positive bar-fb-blue">
+		<h1 class="title">Messages</h1>
+	</ion-header-bar>
+	<ion-content></ion-content>
+</ion-view>
+```
+
+Do for all views
+
+Add `ng-click="vm.login()"`
+anf check the result
+
+### more.html
+```html
+<ion-view>
+    <ion-header-bar class="bar-positive bar-fb-blue">
+        <div class="item-input-wrapper fbsearch"> <i class="icon ion-ios7-search placeholder-icon"></i>
+            <input type="search" class="" placeholder="Search">
+        </div>
+        <button class="button button-clear"> <i class="icon ion-navicon"></i>
+        </button>
+    </ion-header-bar>
+
+    <ion-content>
+
+        <div class="list">
+            <a class="item item-icon-left" href="">
+                <i class="icon ion-email energized"></i>
+                Avi Haiat
+            </a>
+
+            <a class="item item-icon-left item-icon-right" href="">
+                <i class="icon ion-chatbubble-working assertive"></i>
+                Update Info
+                <span class="badge badge-positive">18</span>
+            </a>
+
+            <div class="item item-divider">
+                APPS
+            </div>
+
+            <a class="item item-icon-left" href="">
+                <i class="icon ion-mic-a dark"></i>
+                Record album
+                <span class="item-note">Grammy</span>
+            </a>
+
+            <a class="item item-icon-left" href="">
+                <i class="icon ion-person-stalker positive"></i>
+                Find Friends
+                <span class="badge badge-positive">20+</span>
+            </a>
+
+        </div>
+
+    </ion-content>
+</ion-view>
+```
+
 ### newsfeed.js
 ```js
 'use strict';
 var controllername = 'newsfeed';
-
+var _ = require('lodash');
 module.exports = function(app) {
     /*jshint validthis: true */
 
-    var deps = ['$rootScope', '$ionicLoading', '$state', facebook'];
+    var deps = ['$rootScope', '$ionicLoading', '$state', 'facebook'];
 
     function controller($rootScope, $ionicLoading, $state, facebook) {
         var vm = this;
         //$ionicBackdrop.retain();
         $ionicLoading.show({
-            template: 'Loading...'
+            template: '<i class="icon ion-loading-c" style="font-size:40px;"></i>',
+            animation: 'fade-in',
+            showBackdrop: true
         });
         if ($rootScope.items) {
             vm.items = $rootScope.items;
+            vm.friends = $rootScope.friends;
             $ionicLoading.hide();
             //$ionicBackdrop.release();
         } else {
             vm.items = [];
+            vm.friends = [];
             var fields = {
                 'fields':'full_picture,likes,description,comments,from,story,message,name,created_time'
             };
             facebook.get('/me/home', fields ).then(function(res) {
                 vm.items = res.data.data;
                 $rootScope.items = res.data.data;
+
+                vm.friends = _.chain(vm.items)
+                    .map(function(item) {
+                        return item.from;
+                    })
+                    .uniq(function(item) {
+                        return item.id;
+                    })
+                    .value();
+                $rootScope.friends = vm.friends;
+
                 $ionicLoading.hide();
                 //$ionicBackdrop.release();
             });
@@ -493,7 +596,7 @@ module.exports = function(app) {
         vm.logout = function() {
             facebook.logout();
             $state.go('login');
-        }
+        };
     }
 
     controller.$inject = deps;
@@ -546,25 +649,6 @@ module.exports = function(app) {
 ```
 
 
-### notifications.html
-```html
-<ion-view>
-	<ion-header-bar class="bar-positive bar-fb-blue">
-		<h1 class="title">Notifications</h1>
-	</ion-header-bar>
-	<ion-content></ion-content>
-</ion-view>
-```
-
-### messages.html
-```html
-<ion-view>
-	<ion-header-bar class="bar-positive bar-fb-blue">
-		<h1 class="title">Messages</h1>
-	</ion-header-bar>
-	<ion-content></ion-content>
-</ion-view>
-```
 
 ### requests.html
 ```html
@@ -574,10 +658,10 @@ module.exports = function(app) {
     </ion-header-bar>
     <ion-content>
 
-        <ion-list ng-repeat="item in vm.items">
+        <ion-list ng-repeat="item in vm.friends">
             <ion-item class="item-thumbnail-left">
-                <img ng-src="https://graph.facebook.com/{{ item.from.id }}/picture?width=120&height=120"/>
-                <h2>{{item.from.name}}</h2>
+                <img ng-src="https://graph.facebook.com/{{ item.id }}/picture?width=120&height=120"/>
+                <h2>{{item.name}}</h2>
                 <p>1 mutual friend</p>
                 <div class="button-bar">
                     <button class="button button-positive button-small" >Confirm</button>
