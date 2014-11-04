@@ -127,8 +127,16 @@
             </section>
 
             <section data-background="#29AD8E">
-                <img src="https://cloud.githubusercontent.com/assets/4806944/4646509/f4577590-5473-11e4-8c2e-8e7ffff4f9bc.png" alt="" class="stretch">
+                <div class='row slide-content'>
+                    <div class="col-xs-8">
+                        <img src="https://cloud.githubusercontent.com/assets/4806944/4646509/f4577590-5473-11e4-8c2e-8e7ffff4f9bc.png" alt="" sheight=800 sclass="stretch">
+                    </div>
+                    <div class="col-xs-4">
+                        <video src="http://pdl.vimeocdn.com/38904/891/289222404.mp4?token2=1415067720_69eafe62e53b011a6dffb28adfc4fed6&aksessionid=0095f4e054cce30b" data-autoplay loop sheight=800></video>
+                    </div>
+                </div>
             </section>
+
 
             <section>
                 <img src="http://www.edenvirginhair.com/wp-content/uploads/2014/08/we-are-recruiting.png" alt="" class="stretch fragment roll-in">
@@ -409,7 +417,7 @@ class="item-thumbnail-left">
                             <li>works with android back button</li>
                         </ul>
                         <pre><code  scontenteditable style="word-wrap:break-word;word-break:break-word;"><ion-nav-bar back-button-icon="ion-chevron-left" back-button-type="button-icon">
-</ion-nav-bar> 
+</ion-nav-bar>
 
 <ion-nav-view animation="slide-left-right">
 </ion-nav-view>
@@ -536,15 +544,19 @@ $ionicActionSheet.show({
                     <div class="col-xs-12" style="font-sizes: 30px;">
                         <ul>
                             <li class="fragment">
-                                Download the starter kit
-                                <pre class="cmake" style="background-color:#3F3F3F;width:100%">
-<a href="http://code.famo.us/famous-angular/latest/famous-angular-starter-kit.zip?src=google-slide-deck" style="color:#E3CEAB">http://code.famo.us/famous-angular/latest/famous-angular-starter-kit.zip</a>
-                            </pre>
+                                Use ionic cli
+                                <pre><code data-trim contenteditable>
+npm install -g ionic
+ionic start myapp [template]
+ionic serve
+ionic platform ios android
+ionic build ios
+</code></pre>
                             </li>
                             <li class="fragment">
                                 or install with Bower
                                 <pre><code data-trim contenteditable>
-bower install famous-angular
+bower install ionic
 
 </code></pre>
                             </li>
@@ -566,31 +578,15 @@ yo famous-angular-ionic
 
             <section>
                 <h2>Live coding</h2>
-                <p>Let's play with the baby and see how easy it is to build a flickr like mobile app</p>
+                <p>Let's play with the baby and see how easy it is to build a facebook like mobile app</p>
                 <img src="http://i.giphy.com/hV2T82ysDmIDu.gif" class="stretch" alt="">
             </section>
 
             <section>
 
-                <h2>We are going to build famous-flickr</h2>
-                <video data-autoplay src="http://video.capptivate.co/videos/FlickrPTR/FlickrPTR.hyperesources/FlickrPTR.mov" loop height=700></video>
+                <h2>We are going to build facebook mobile app</h2>
+                <img src="https://cloud.githubusercontent.com/assets/4806944/4893703/f09b7d00-63c5-11e4-8d12-b7f7306a9ea0.png" class="stretch" alt="">
             </section>
-
-
-            <section>
-                <h2>Let's wrap it up</h2>
-                <ul>
-                    <li>Scaffold template app with yo angular-famous-ionic</li>
-                    <li>Scaffold service photos</li>
-                    <li>Scaffold view controller home</li>
-                    <li>Use famo.us angular for rendering the home view</li>
-                    <ul>
-                        <li>fa-scroll-view</li>
-                        <li>fa-grid-layout</li>
-                    </ul>
-                </ul>
-            </section>
-
 
             <section>
                 <h2>That's it !!!</h2>
