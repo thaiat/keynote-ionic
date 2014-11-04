@@ -18,6 +18,9 @@
 </head>
 ```
 
+```html
+<body class="platform-cordova">
+```
 
 ## Demo
 
@@ -243,12 +246,40 @@ module.exports = function(app) {
 
 ### Add the following code to main.js
 ```js
- app.run(function($rootScope, $window, $state, facebook) {
-        facebook.init('323666037785577');
-        if(facebook.oauthCallback($window.location.href)) {
-            $state.go('tabs.newsfeed');
+'use strict';
+
+var namespace = 'main';
+
+var angular = require('angular');
+
+var app = angular.module(namespace, [
+    'ui.router', 'ionic',
+    // inject:modules start
+    require('./common')(namespace).name,
+    require('./ngFacebook')(namespace).name
+    // inject:modules end
+]);
+
+app.run(function(facebook, $window, $state, $ionicPlatform) {
+    facebook.init('323666037785577');
+
+    $ionicPlatform.ready(function() {
+        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
+        // for form inputs)
+        if(window.cordova && window.cordova.plugins.Keyboard) {
+            window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
+        }
+        if(window.StatusBar) {
+            // org.apache.cordova.statusbar required
+            window.StatusBar.styleDefault();
         }
     });
+    if(facebook.oauthCallback($window.location.href)) {
+        $state.go('tabs.newsfeed');
+    }
+});
+
+module.exports = app;
 ```
 
 
@@ -309,30 +340,6 @@ ion-nav-view {
 }
 ```
 
-### PAS BESOIN main.js
-* add ionic as a dependency
-* add run
-
-```js
-.run(['$ionicPlatform', 'facebook',
-        function($ionicPlatform, facebook) {
-             facebook.init('323666037785577');
-            $ionicPlatform.ready(function() {
-                // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-                // for form inputs)
-                if(window.cordova && window.cordova.plugins.Keyboard) {
-                    window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-                }
-                if(window.StatusBar) {
-                    // org.apache.cordova.statusbar required
-                    window.StatusBar.styleDefault();
-                }
-            });
-
-        }
-    ]);
-
-```
 
 ### common/index.js
 change the routes
