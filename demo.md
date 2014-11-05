@@ -272,17 +272,6 @@ var app = angular.module(namespace, [
 app.run(function(facebook, $window, $state, $ionicPlatform) {
     facebook.init('323666037785577');
 
-    $ionicPlatform.ready(function() {
-        // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
-        // for form inputs)
-        if(window.cordova && window.cordova.plugins.Keyboard) {
-            window.cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);
-        }
-        if(window.StatusBar) {
-            // org.apache.cordova.statusbar required
-            window.StatusBar.styleDefault();
-        }
-    });
     if(facebook.oauthCallback($window.location.href)) {
         $state.go('tabs.newsfeed');
     }
@@ -409,7 +398,7 @@ change the routes
     $urlRouterProvider.otherwise('/login');
 ```
 
-
+### Restart gulp browsersync
 
 ### index.html
 change to the ui-view to
