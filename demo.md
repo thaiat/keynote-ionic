@@ -25,6 +25,13 @@
 
 ## Demo
 
+### Show the project
+```
+gulp help
+gulp lint
+gulp karma
+````
+
 ### Scaffold modules ngFacebook and common
 ```
 yo angular-famous-ionic:module ngFacebook
