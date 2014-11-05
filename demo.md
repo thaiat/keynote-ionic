@@ -4,6 +4,7 @@
 * Import facebook big and small logo
 * Remove source map for gulp style
 * Change browsersync port and tunnel
+* Change browsersync watch on main.min.css
 * Change auto save
 
 ### index.html
@@ -613,6 +614,31 @@ module.exports = function(app) {
 
 ```
 
+### requests.html
+```html
+<ion-view>
+    <ion-header-bar class="bar bar-positive bar-fb-blue">
+        <h1 class="title">Friends Requests</h1>
+    </ion-header-bar>
+    <ion-content>
+
+        <ion-list ng-repeat="item in vm.friends">
+            <ion-item class="item-thumbnail-left">
+                <img ng-src="https://graph.facebook.com/{{ item.id }}/picture?width=120&height=120"/>
+                <h2>{{item.name}}</h2>
+                <p>1 mutual friend</p>
+                <div class="button-bar">
+                    <button class="button button-positive button-small" >Confirm</button>
+                    <button class="button button-light button-small " style="margin-left:10px">Not Now</button>
+                </div>
+
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+</ion-view>
+```
+
 ### newsfeed.html
 ```html
 <ion-view class="gray-background">
@@ -648,39 +674,12 @@ module.exports = function(app) {
 
     <!--     CONTENT -->
     <ion-content>
-
+        <!-- PULL TO REFRESH GOES HERE -->
         <!-- CARD GOES HERE -->
 
     </ion-content>
 </ion-view>
 
-```
-
-
-
-### requests.html
-```html
-<ion-view>
-    <ion-header-bar class="bar bar-positive bar-fb-blue">
-        <h1 class="title">Friends Requests</h1>
-    </ion-header-bar>
-    <ion-content>
-
-        <ion-list ng-repeat="item in vm.friends">
-            <ion-item class="item-thumbnail-left">
-                <img ng-src="https://graph.facebook.com/{{ item.id }}/picture?width=120&height=120"/>
-                <h2>{{item.name}}</h2>
-                <p>1 mutual friend</p>
-                <div class="button-bar">
-                    <button class="button button-positive button-small" >Confirm</button>
-                    <button class="button button-light button-small " style="margin-left:10px">Not Now</button>
-                </div>
-
-            </ion-item>
-        </ion-list>
-
-    </ion-content>
-</ion-view>
 ```
 
 
@@ -725,4 +724,13 @@ card
                 </div>
             </div>
         </div>
+```
+
+
+pull to refresh (under content)
+
+```html
+<ion-refresher  on-refresh="vm.doRefresh()">
+</ion-refresher>
+
 ```
