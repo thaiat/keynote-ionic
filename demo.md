@@ -1,11 +1,12 @@
 ## Preparation
-
+* `yo angular-famous-ionic --mobile`
 * codio startup.sh
 * Import facebook big and small logo
 * Remove source map for gulp style
 * Change browsersync port and tunnel
 * Change browsersync watch on main.min.css
 * Change auto save
+
 
 ### index.html
 ```html
@@ -34,7 +35,7 @@ gulp karma
 
 ### Scaffold modules ngFacebook and common
 ```
-yo angular-famous-ionic:module ngFacebook
+yo angular-famous-ionic:module ngFacebook --skip-route
 yo angular-famous-ionic:module common
 ```
 
@@ -269,13 +270,13 @@ var app = angular.module(namespace, [
     // inject:modules end
 ]);
 
-app.run(function(facebook, $window, $state, $ionicPlatform) {
+app.run(['facebook', '$window', '$state', '$ionicPlatform', function(facebook, $window, $state, $ionicPlatform) {
     facebook.init('323666037785577');
 
     if(facebook.oauthCallback($window.location.href)) {
         $state.go('tabs.newsfeed');
     }
-});
+}]);
 
 module.exports = app;
 ```
