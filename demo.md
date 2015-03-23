@@ -261,6 +261,7 @@ module.exports = function(app) {
 var namespace = 'main';
 
 var angular = require('angular');
+require('angular-ionic');
 
 var app = angular.module(namespace, [
     'ui.router', 'ionic',
