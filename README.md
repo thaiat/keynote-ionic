@@ -3,6 +3,12 @@ Ionic Framework
 
 [Start the presentation](http://thaiat.github.io/keynote-ionic)
 
+
+
+See it in action here:   
+[![Building a native like interface with Ionic](http://img.youtube.com/vi/EgRh09CO_rk/0.jpg)](http://www.youtube.com/watch?v=EgRh09CO_rk)
+
+
 Additional links.
 
  - [Learn Ionic](http://learn.ionicframework.com/)
