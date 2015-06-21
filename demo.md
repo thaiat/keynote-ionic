@@ -1,5 +1,5 @@
 ## Preparation
-* `yo angular-famous-ionic --mobile`
+* `yo mcfly --mobile`
 * codio startup.sh
 * Import facebook big and small logo
 * Remove source map for gulp style
@@ -35,19 +35,19 @@ gulp karma
 
 ### Scaffold modules ngFacebook and common
 ```
-yo angular-famous-ionic:module ngFacebook --skip-route
-yo angular-famous-ionic:module common
+yo mcfly:module ngFacebook --skip-route
+yo mcfly:module common
 ```
 
 ### Scaffold service facebook
 ```
-yo angular-famous-ionic:service ngFacebook facebook
+yo mcfly:service ngFacebook facebook
 ```
 
 ### Scaffold login, newsfeed and controller
 ```
-yo angular-famous-ionic:controller common login
-yo angular-famous-ionic:controller common newsfeed
+yo mcfly:controller common login
+yo mcfly:controller common newsfeed
 
 ```
 
